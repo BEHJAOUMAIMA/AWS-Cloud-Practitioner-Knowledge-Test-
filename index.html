@@ -5,9 +5,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <title>Welcome</title>
     <!-------- Link css ----------->
-    <link rel="stylesheet" href="../AWS-Cloud-Practitioner-Knowledge-Test-/dist/css/style.css" />
+    <link rel="stylesheet" href="./dist/css/style.css" />
 </head>
 
 <body>
@@ -16,13 +17,15 @@
             <div>
                 <p class="logo">Quizizy !</p>
             </div>
-            <div class="form">
-                <input id="input" type="text" placeholder="Entrer votre Nom">
-                <button id="btnvalider" type="submit">Valider</button>
+            <form id="" action="">
+                <div class="form">
+                    <input id="input" type="text" placeholder="Entrer votre Nom" />
+                    <div id="errorname" class="errorname"></div>
+                    <button id="btnvalider" type="submit">Valider</button>
+                </div>
+            </form>
 
-            </div>
-
-            <div class="guide">
+            <div class="guide ">
                 <h4 class="title">Guide de QUIZ :</h4>
                 <p class="rule">1. Vous avez 3O secondes pour répondre à chaque question</p>
                 <p class="rule">2. Une fois que vous avez sélectionné votre réponse, cela ne peut pas être fait.</p>
@@ -30,9 +33,66 @@
                 <p class="rule">4. Vous ne pouvez pas quitter le quiz pendant que vous jouez</p>
             </div>
         </div>
-    </div>
 
+        <div id="quiz-app" class="application">
+            <div class="information">
+                <div class="categorie">
+                    Catégorie : <span>AWS Certified Cloud Practitioner (CLF-C01) - Sample Exam Questions</span>
+                </div>
+                <div class="compteur">
+                    Questions : <span>10</span>
+                </div>
+            </div>
+            <div id="question" class="question">
+                <p class="titre">Why is AWS more economical than traditional data centers for applications with varying compute workloads?</p>
+            </div>
+            <div id="answers" class="answers">
+                <div class="answer">
+                    <input type="radio" id="answer_1" name="reponse" checked>
+                    <label for="answer_1"> Amazon EC2 costs are billed on a monthly basis</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" id="answer_2" name="reponse">
+                    <label for="answer_2"> Users retain full administrative access to their Amazon EC2 instances.</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" id="answer_3" name="reponse">
+                    <label for="answer_3"> Amazon EC2 instances can be launched on demand when needed.</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" id="answer_4" name="reponse">
+                    <label for="answer_4"> Users can permanently run enough instances to handle peak workloads.</label>
+                </div>
+            </div>
+            <button id="btnNext" type="submit"> Suivant</button>
+            <div class="bullets">
+                <div class="spans">
+                    <span class="on"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="countdown">
+                    <span class="minutes">00</span> : <span class="secondes">30</span>
+                </div>
+            </div>
+            <div class="resultats">
+                <span class="bravo">Bravo !</span> Vous Avez Répondu à 1 sur 10 questions.
+            </div>
 
+        </div>
+</body>
+
+</html>
+</div>
+<script src="questions.js"></script>
+<script src="script.js"></script>
 </body>
 
 </html>

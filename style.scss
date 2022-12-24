@@ -16,19 +16,19 @@ cursive;
 $font5:'Rubik Spray Paint',
 cursive;
 body {
+    background-image: url('../../images/bg1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     .background-image {
-        background-image: url('../../images/bg1.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100vh;
+        height: 100%;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
         color: white;
         .section {
-            display: flex;
+            display: none;
             flex-direction: column;
             .logo {
                 font: {
@@ -60,7 +60,18 @@ body {
                         style: solid;
                     }
                 }
+                .errorname {
+                    color: black;
+                    font: {
+                        family: $font3;
+                        size: 12px;
+                        weight: bold;
+                    }
+                    text-align :center;
+                    margin:10px 0;
+                }
                 #btnvalider {
+                    cursor: pointer;
                     padding: 15px;
                     margin-bottom: 7px;
                     text-align: center;
@@ -97,6 +108,127 @@ body {
                     }
                     margin-bottom:5px;
                     margin-left:35px;
+                }
+            }
+        }
+        .application {
+            margin: 20px auto;
+            width: 1200px;
+            height: 650px;
+            padding: 15px;
+            background-color: rgba(0, 8, 54, 1);
+            border-radius: 30px;
+            box-shadow: 10px 10px 3px #ff1582;
+            .information {
+                display: flex;
+                padding: 20px;
+                margin: 20px 0;
+                .categorie {
+                    flex: 1;
+                    font: {
+                        family: $font3;
+                        size: 13px;
+                        weight: bold;
+                    }
+                }
+                .compteur {
+                    @extend.categorie;
+                    text-align: right;
+                }
+            }
+            .question {
+                margin-top: 15px;
+                padding: 20px;
+                .titre {
+                    font: {
+                        family: $font3;
+                        size: 18px;
+                        weight: bold;
+                    }
+                    margin:0;
+                }
+            }
+            .answers {
+                padding: 0 20px 20px;
+                .answer {
+                    padding: 15px;
+                    label {
+                        cursor: pointer;
+                        font-weight: bold;
+                        font-size: 15px;
+                        font-family: $font3;
+                        margin-left: 10px;
+                        position: relative;
+                        top: -1px;
+                    }
+                }
+                .answer:not(:last-child) {
+                    border-bottom: 1px solid white;
+                }
+            }
+            #btnNext {
+                background-color: #ff1582;
+                color: white;
+                display: block;
+                width: 20%;
+                padding: 15px 15px;
+                border: none;
+                border-radius: 10px;
+                font-family: $font3;
+                font-weight: bold;
+                font-size: 15px;
+                cursor: pointer;
+                margin: 20px auto;
+            }
+            #btnNext:focus {
+                outline: none;
+            }
+            #btnNext:hover {
+                background-color: #f92d8c;
+                font-size: 16px;
+                transform: translateY(5px);
+            }
+            .bullets {
+                border-top: 1px solid white;
+                display: flex;
+                padding: 20px;
+                .spans {
+                    flex: 1;
+                    display: flex;
+                    span {
+                        width: 25px;
+                        height: 25px;
+                        margin-right: 5px;
+                        background-color: white;
+                    }
+                    span.on {
+                        background-color: #ff1582;
+                    }
+                }
+            }
+            .resultats {
+                font: {
+                    family: $font3;
+                    size: 14px;
+                }
+                margin-top:10px;
+                margin-left:10px;
+                span {
+                    font: {
+                        family: $font3;
+                        weight: bold;
+                        size: 17px;
+                    }
+                    margin-right:5px;
+                }
+                span.mam {
+                    color: #dc0a0a;
+                }
+                span.bien {
+                    color: #009688;
+                }
+                span.bravo {
+                    color: #ff1582;
                 }
             }
         }

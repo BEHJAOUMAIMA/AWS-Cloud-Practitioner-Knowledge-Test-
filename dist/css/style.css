@@ -1,80 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700;800&family=Mochiy+Pop+One&family=Poppins:wght@500;600;700;900&family=Rubik+Gemstones&family=Rubik+Spray+Paint&display=swap");
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  width: 100%;
+  width: 200%;
   height: 100%;
 }
 body .background-image {
-  background-image: url("../../images/bg1.jpg");
+  background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-body .background-image .section {
-  display: flex;
-  flex-direction: column;
-}
-body .background-image .section .logo {
-  font-family: "Rubik Gemstones", cursive;
-  font-size: 70px;
-  text-align: center;
-}
-body .background-image .section .form {
-  display: flex;
-  flex-direction: column;
-  margin: 20px auto 80px;
-  padding: 20px;
-  width: 370px;
-  background-color: white;
-  border-radius: 9px;
-}
-body .background-image .section .form #input {
-  padding: 15px;
-  margin-top: 15px;
-  margin-bottom: 7px;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  font-size: 15px;
-  border-width: 3px;
-  border-style: solid;
-}
-body .background-image .section .form #btnvalider {
-  padding: 15px;
-  margin-bottom: 7px;
-  text-align: center;
-  background-color: black;
-  color: white;
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  font-size: 15px;
-}
-body .background-image .section .form #btnvalider:hover {
-  background-color: rgb(10, 19, 95);
-  border: 2px solid rgb(10, 19, 95);
-  color: white;
-  font-weight: bolder;
-  font-size: 18px;
-}
-body .background-image .section .guide .title {
-  font-family: "Mochiy Pop One", sans-serif;
-  font-size: 20px;
-  margin-top: 30px;
-  margin-bottom: 15px;
-  margin-left: 35px;
-}
-body .background-image .section .guide .rule {
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  margin-bottom: 5px;
-  margin-left: 35px;
+  width: 600px;
 }/*# sourceMappingURL=style.css.map */
